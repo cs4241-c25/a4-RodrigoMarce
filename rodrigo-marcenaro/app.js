@@ -36,7 +36,7 @@ passport.deserializeUser(async (id, done) => {
 passport.use(new GitHubStrategy({
         clientID: GITHUB_CLIENT_ID,
         clientSecret: GITHUB_CLIENT_SECRET,
-        callbackURL: 'http://localhost:3000/auth/github/callback'
+        callbackURL: 'https://a4-rodrigomarce.onrender.com/auth/github/callback'
     },
     async function(accessToken, refreshToken, profile, done) {
         try {
