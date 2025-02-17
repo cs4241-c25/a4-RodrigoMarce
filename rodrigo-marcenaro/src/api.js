@@ -41,7 +41,7 @@ export const addTask = async (task) => {
 };
 
 export const deleteTask = async (taskId) => {
-    const response = await fetch(`http://localhost:3000/tasks/${taskId}`, {
+    const response = await fetch(`/tasks/${taskId}`, {
         method: 'DELETE',
     });
     if (!response.ok) {
